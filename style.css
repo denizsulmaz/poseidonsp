@@ -268,16 +268,21 @@ form{
         display: flex;
         justify-content: center;
     }
-    .social{
+        .social{
         position: absolute;
         bottom: 35px;
-        margin-left: 1.5%;
+        margin-left: 1%;
         border-radius: 10px;
         align-items: center;
-        background-color: rgba(255, 255, 255, 0.075);
-        padding: 10px 15px;
+        box-shadow: none;
+        background-color: rgba(255, 255, 255, 0.014);
+        padding: 10px 5px;
         display: flex;
         flex-direction: column;
+    }
+    .social li{
+        font-size: 16px;
+        padding: 5px 0px;
     }
     form{
         margin-left: 3%;
