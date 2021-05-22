@@ -1,0 +1,310 @@
+html {
+    --color:#00879D;
+    --scrollbarBG: #000000;
+    --thumbBG: #ffffff;
+  }
+  ::selection{
+      background-color: rgba(230, 230, 250, 0);
+  }
+  li{
+      list-style: none;
+  }
+  body::-webkit-scrollbar {
+    width: 2px;
+  }
+  body {
+    background-color: #020405;
+    scrollbar-width:thick;
+    scrollbar-color: var(--thumbBG) var(--scrollbarBG);
+  }
+  body::-webkit-scrollbar-track {
+    background: var(--scrollbarBG);
+  }
+  body::-webkit-scrollbar-thumb {
+    background-color: var(--thumbBG) ;
+    border-radius: 6px;
+    border: 1px solid var(--scrollbarBG);
+  }
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+.main{
+    background: url(img/bg.png) no-repeat center;
+    background-size: 200%;
+    height: 100vh;
+    width: 100%;
+}
+.logoHolder{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.logo{
+    pointer-events: none;
+    opacity: 0.8;
+    width: 20%;
+    animation: logo 3s ease-in-out;
+}
+@keyframes logo{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 0.8;
+    }
+}
+.brand{
+    cursor:context-menu;
+    animation: brand 4s ease-in-out;
+    font-size: 60px;
+    color: white;
+    text-shadow: black 1px 2px;
+    display: flex;
+    justify-content: center;
+}
+@keyframes brand{
+   0%{opacity: 0;}
+   25%{opacity: 0;}
+   50%{opacity: 0.1;}
+   80%{opacity: 0.8;}
+   100%{opacity: 1;}
+}
+
+.cs{
+    animation: cs 6s ease-in-out;
+    margin-top: 3%;
+    font-size: 35px;
+    color: white;
+    text-shadow: black 1px 2px;
+    display: flex;
+    justify-content: center;
+}
+@keyframes cs{
+    0%{opacity: 0;}
+    25%{opacity: 0;}
+    50%{opacity: 0.1;}
+    80%{opacity: 0.8;}
+    100%{opacity: 1;}
+}
+.redi{
+    margin-top: 2%;
+    display: flex;
+    justify-content: center;
+}
+.redirect{
+    animation: redirect 8s ease-in-out;
+    transition: 0.4s ease-in-out;
+    padding: 15px 17px;
+    border: 2px solid white;
+    border-radius: 8px;
+    margin-left: auto;
+    margin-right: auto;
+}
+@keyframes redirect{
+    0%{opacity: 0;}
+    25%{opacity: 0;}
+    50%{opacity: 0.1;}
+    60%{opacity: 0.5;  box-shadow: white 0 0px 7px;}
+    70%{opacity: 0.8;}
+    100%{opacity: 1;  box-shadow: white 0 0px 0px;}
+}
+.fa-bell{
+    animation: bell 8s ease-in-out;
+    transition: 0.4s ease-in-out;
+    font-size: 25px;
+    color: var(--color);
+}
+@keyframes bell{
+    0%{opacity: 0;}
+    25%{opacity: 0;color:white;}
+    50%{opacity: 0.1;color:white; }
+    60%{opacity: 0.5; color:white;}
+    70%{opacity: 0.8;}
+    100%{opacity: 1;  color: var(--color);}
+}
+.redirect:hover{
+    background-color: black;
+    box-shadow: white 0 0px 7px;
+}
+.redirect:hover .fa-bell{
+    color: white;
+}
+.social{
+    position: absolute;
+    bottom: 35px;
+    margin-left: 1.5%;
+    border-radius: 10px;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.048);
+    box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.192);
+    padding: 10px 15px;
+    display: flex;
+    flex-direction: row;
+}
+.social a{
+    padding: 2px 7px;
+}
+.social i{
+    color: rgba(255, 255, 255, 0.863);
+    font-size: 24px;
+}
+.fa-at:hover{
+    color: var(--color);
+}
+.fa-instagram, .fa-linkedin, .fa-at{
+    transition: 0.3s ease-in-out;
+}
+.fa-instagram:hover{
+    color: #B42577;
+}
+.fa-linkedin:hover{
+    color: #0072b1;
+}
+.footer{
+    background-color: #020405;
+    height: auto;
+    width: 100%;
+}
+.dslogo{
+    width: 2.5%;
+    position: absolute;
+    right: 30px;
+    padding-bottom: 20px;
+}
+
+form{
+    margin-left: 3%;
+    display: flex;
+    flex-direction: column;
+    width: 20%;
+}
+
+.notify{
+    text-decoration: none;
+    transition: 0.3s ease-in-out ;
+    padding: 5px 10px;
+    background: rgba(255, 255, 255, 0);
+    border: 2px solid var(--color);
+    color: var(--color);
+    font-size: 25px;
+    cursor: pointer;
+    margin: 5px 0;
+    width: 60%;
+    margin-left: 1.7%;
+}
+.notify:hover{
+    background: var(--color);
+    color: white;
+    border-radius: 10px;
+}
+.apply{
+    text-decoration: none;
+    transition: 0.3s ease-in-out ;
+    padding: 5px 10px;
+    background: rgba(255, 255, 255, 0);
+    border: 2px solid var(--color);
+    color: var(--color);
+    font-size: 25px;
+    cursor: pointer;
+    margin: 5px 0;
+    width: 60%;
+    margin-left: 1.7%;
+}
+.apply:hover{
+    background: var(--color);
+    color: white;
+    text-shadow: 0 0 3px white;
+    border-radius: 8px;
+}
+.copy{
+    padding-top: 35px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    color: #00889dde;
+}
+@media only screen and (max-width:800px){
+    .main{
+        background: url(img/bg.png) no-repeat center !important;
+        background-size: 150%;
+        height: 100vh;
+        width: 100%;
+    }
+    .logoHolder{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .logo{
+        pointer-events: none;
+        opacity: 0.8;
+        width: 50%;
+        animation: logo 3s ease-in-out;
+    }
+    .brand{
+        cursor:context-menu;
+        animation: brand 4s ease-in-out;
+        font-size: 45px;
+        text-align: center;
+        color: white;
+        text-shadow: black 1px 2px;
+        display: flex;
+        justify-content: center;
+    }
+    .cs{
+        animation: cs 6s ease-in-out;
+        margin-top: 6%;
+        font-size: 25px;
+        color: white;
+        text-shadow: black 1px 2px;
+        display: flex;
+        justify-content: center;
+    }
+    .redi{
+        margin-top: 10%;
+        display: flex;
+        justify-content: center;
+    }
+    .social{
+        position: absolute;
+        bottom: 35px;
+        margin-left: 1.5%;
+        border-radius: 10px;
+        align-items: center;
+        background-color: rgba(255, 255, 255, 0.075);
+        padding: 10px 15px;
+        display: flex;
+        flex-direction: column;
+    }
+    form{
+        margin-left: 3%;
+        display: flex;
+        flex-direction: column;
+        width: 60%;
+        margin-bottom: 0%;
+    }
+    .footer{
+        background-color: #020405;
+        height: auto;
+        width: 100%;
+    }
+    .dslogo{
+        width: 6%;
+        position: absolute;
+        right: 5%;
+        margin-top: 6%;
+    }
+    .copy{
+        padding-top: 40px;
+        padding-bottom: 20px;
+        padding-left: 4%;
+        display: flex;
+        justify-content:left;
+        text-align: left;
+        color: #00889dde;
+    }    
+}
+
