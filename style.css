@@ -5,7 +5,9 @@ html {
   }
 /* For JotForm*/
 .formFooter {
-display:none !important;
+    display: none !important;
+    opacity: 0 !important;
+    z-index: -1 !important;
 }
   ::selection {
       background-color: rgba(230, 230, 250, 0);
