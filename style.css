@@ -3,7 +3,11 @@ html {
     --scrollbarBG: #000000;
     --thumbBG: #ffffff;
   }
-  ::selection{
+/* For JotForm*/
+.formFooter {
+display:none !important;
+}
+  ::selection {
       background-color: rgba(230, 230, 250, 0);
   }
   li{
