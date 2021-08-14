@@ -250,7 +250,7 @@ form{
     .logo{
         pointer-events: none;
         opacity: 0.8;
-        width: 50%;
+        width: 26%;
         animation: logo 3s ease-in-out;
     }
     .brand{
@@ -263,6 +263,7 @@ form{
         display: flex;
         justify-content: center;
     }
+    
     .cs{
         animation: cs 6s ease-in-out;
         margin-top: 6%;
@@ -277,6 +278,11 @@ form{
         display: flex;
         justify-content: center;
     }
+    .notify{
+    background: var(--color);
+    color: white;
+    border-radius: 10px;
+}
         .social{
         position: absolute;
         bottom: 35px;
@@ -318,7 +324,7 @@ form{
         display: flex;
         justify-content:left;
         text-align: left;
-        color: #00889dde;
+        color: #3106CD;
     }    
 }
 
